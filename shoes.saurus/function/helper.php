@@ -1,3 +1,2 @@
-<?php 
-define ("BASE_URL", "http://localhost/shoes.saurus/"); 
-?>
+<?php
+define("BASE_URL", "http://localhost/test/shoes.saurus/");

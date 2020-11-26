@@ -1,8 +1,7 @@
-<?php 
-if ($user_id)
-	{
-		header("location:". BASE_URL);
-	}
+<?php
+if ($user_id) {
+    header("location:". BASE_URL);
+}
 
  ?>
 
@@ -12,13 +11,12 @@ if ($user_id)
 	<form action="<?php echo BASE_URL."proses_login.php"; ?>" method="POST">
 
 		<?php
-			$notif = isset($_GET['notif']) ? $_GET['notif'] : false;
+            $notif = isset($_GET['notif']) ? $_GET['notif'] : false;
 
-			if($notif == true)
-				{
-					echo "<div class='notif'>Email atau Password yang anda masukan salah!</div>";
-				}
-		 ?>
+            if ($notif == true) {
+                echo "<div class='notif'>Email atau Password yang anda masukan salah!</div>";
+            }
+         ?>
 
 		<div class="element-form">
 			<label>Email</label>
